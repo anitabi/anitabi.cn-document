@@ -7,7 +7,7 @@
 
 ## 根据 Bangumi 作品 id 获取对应巡礼地标信息
 
-`GET` `https://api.anitabi.cn/bangumi/115908/lite`
+`GET` `https://api.anitabi.cn/bangumi/${subjectID}/lite` [例](https://api.anitabi.cn/bangumi/115908/lite)
 
 
 返回数据结构结构
@@ -47,7 +47,7 @@
 
 #### `liteBangumi` 作品对应巡礼信息 轻量版
 
- - `id` bangumi 作品 ID
+ - `id` bangumi 作品 `subjectID`
  - `cn` 作品中文译名
  - `title` 作品原名
  - `city` 巡礼地标主要所在城市，可能为空
