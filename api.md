@@ -86,7 +86,7 @@
 
 ## 根据 bangumi 作品 ID 获得巡礼地图地址
 ```javascript
-function getAnitabiURLById(id){
+function getAnitabiSubjectURLById(id){
 	return `https://anitabi.cn/map?bangumiId=${id}`
 }
 ```
