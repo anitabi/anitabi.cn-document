@@ -1,5 +1,10 @@
 # 动画巡礼 API
 
+## 基础 API 地址
+ - 数据 API 基础地址 `https://api.anitabi.cn/`
+ - 图片 API 基础地址 `https://image.anitabi.cn/`
+> 请勿在任何场景下请求主域 `https://anitabi.cn/`，主域不确保任何 **资源地址** 以及 **数据结构** 的稳定
+
 ## 根据 Bangumi 作品 id 获取对应巡礼地标信息
 
 `GET` `https://api.anitabi.cn/bangumi/115908/lite`
@@ -40,7 +45,7 @@
 ```
 ### 属性说明
 
-#### `bangumiLite` 作品对应巡礼信息 轻量版
+#### `liteBangumi` 作品对应巡礼信息 轻量版
 
  - `id` bangumi 作品 ID
  - `cn` 作品中文译名
@@ -60,7 +65,28 @@
  - `id` 地标 ID
  - `cn` 地标中文译名
  - `name` 地标原名，默认为地标所属国家语言
- - `image` 地标对应截图
+ - `image` 地标对应截图缩略图
  - `ep` 集数
  - `s` 截图对应时间 单位秒
  - `geo[]` 地标对应 GPS 信息
+
+
+## 通过截图缩略图地址获取标清截图
+例如通过 [缩略图地址](https://image.anitabi.cn/points/115908/qys7fu.jpg?plan=h160)，获得更高分辨率截图。
+
+可将 查询值 `?plan=h160` 替换为 `?plan=h360`
+
+可获得适合在移动设备满宽度查看尺寸的 [截图地址](https://image.anitabi.cn/points/115908/qys7fu.jpg?plan=h360) 
+
+
+## 通过截图缩略图地址获取完整尺寸截图
+可将 查询值 `?plan=h160` 删除，即为 [完整尺寸截图](https://image.anitabi.cn/points/115908/qys7fu.jpg)。
+
+> 不建议在 **任何展示界面** 上使用完整尺寸截图，大量请求完整尺寸截图会对服务器造成压力，且无法确保快速加载。
+
+## 根据 bangumi 作品 ID 获得巡礼地图地址
+```javascript
+function getAnitabiURLById(id){
+	return `https://anitabi.cn/map?bangumiId=${id}`
+}
+```
