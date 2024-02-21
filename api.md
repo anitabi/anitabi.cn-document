@@ -95,7 +95,11 @@ function getAnitabiSubjectURLById(id){
 ## 根据 Bangumi 作品 id 获取对应巡礼地标详情信息
 
 `GET` `https://api.anitabi.cn/bangumi/${subjectID}/points/detail` [例](https://api.anitabi.cn/bangumi/126461/points/detail)
-`QueryString` `haveImage=true` 筛选含图地标
+
+`QueryString` 
+ - `haveImage=true` 筛选含图地标
+
+Anitabi 的巡礼地标截图来着多种不同信息来源，使用此 API 获取地标截图信息时，建议在展示的地标截图信息旁 标注 `origin` 文字，以及实现 `originURL` 的跳转
 
 返回数据结构
 ```JSON
