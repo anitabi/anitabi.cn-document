@@ -10,7 +10,7 @@
 `GET` `https://api.anitabi.cn/bangumi/${subjectID}/lite` [例](https://api.anitabi.cn/bangumi/115908/lite)
 
 
-返回数据结构结构
+返回数据结构
 ```JSON
 {
 	"id": 115908,
@@ -89,4 +89,30 @@
 function getAnitabiSubjectURLById(id){
 	return `https://anitabi.cn/map?bangumiId=${id}`
 }
+```
+
+
+## 根据 Bangumi 作品 id 获取对应巡礼地标详情信息
+
+`GET` `https://api.anitabi.cn/bangumi/${subjectID}/points/detail` [例](https://api.anitabi.cn/bangumi/126461/points/detail)
+`QueryString` `haveImage=true` 筛选含图地标
+
+返回数据结构
+```JSON
+[
+	{
+		"id": "5qypywi9",
+		"name": "第二箸別バス停前（箸別駅西側）",
+		"image": "https://image.anitabi.cn/points/126461/5qypywi9.jpg?plan=h160",
+		"ep": 1,
+		"s": 282,
+		"geo": [
+			43.8578,
+			141.5462
+		],
+		"origin": "Google Maps",
+		"originURL": "https://www.google.com/maps/d/viewer?mid=1hkF1issn0oVQDeN4BIrBPp5b5Ek&ll=43.857864%2C141.546264&z=17"
+	},
+	…
+]
 ```
