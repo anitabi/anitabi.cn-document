@@ -101,6 +101,11 @@ function getAnitabiSubjectURLById(id){
 
 Anitabi 的巡礼地标截图来着多种不同信息来源，使用此 API 获取地标截图信息时，建议在展示的地标截图信息旁 标注 `origin` 文字，以及实现 `originURL` 的跳转
 
+遵循
+署名、非商业性使用、相同方式共享 的
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" target="_blank">CC BY-NC-SA 4.0</a>
+协议共享
+
 返回数据结构
 ```JSON
 [
