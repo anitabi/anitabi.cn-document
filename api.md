@@ -1,4 +1,9 @@
-# 动画巡礼 API
+---
+title: 🔧 开放 API
+sidebar_position: 4
+---
+
+# 🔧 开放 API
 
 ## 基础 API 地址
  - 数据 API 基础地址 `https://api.anitabi.cn/`
