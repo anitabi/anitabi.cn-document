@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: run action
         id: run_action
-        uses: PaulRitter/github-action-create-commit-parent-submodule@v2
+        uses: PaulRitter/github-action-create-commit-parent-submodule@v2.0
         with:
           github_token: ${{ secrets.GH_ACTIONS_TOKEN }}
           parent_repository: anitabi/navi.anitabi.cn
