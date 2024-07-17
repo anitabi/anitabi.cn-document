@@ -16,6 +16,9 @@ anitabi map 动画巡礼地图 是一个共享动画取景圣地地标与截图�
 
 使用时有哪些流程概念上的问题建议，也欢迎和我说
 
+## 提交文档 PR 须知
+1. 嵌入图片时，请将文件放在对应层级的 img 文件夹中。例如基本教程对应的文件夹是 `tutorial-basics`，所以该系列教程中使用的照片应放置在 `tutorial-basics/img` 下。
+2. 图片地址请使用相对地址(相对 markdown 文件)，如 `./img/tutorial-basics/create-point/capture-frame-mode.png`
 
 ## 开放 API
 [开放 API 文档地址](api.md)
