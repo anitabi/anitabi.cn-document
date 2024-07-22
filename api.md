@@ -126,7 +126,6 @@ Anitabi 的巡礼地标截图来着多种不同信息来源，使用此 API 获�
 		],
 		"origin": "Google Maps",
 		"originURL": "https://www.google.com/maps/d/viewer?mid=1hkF1issn0oVQDeN4BIrBPp5b5Ek&ll=43.857864%2C141.546264&z=17"
-	},
-	…
+	}
 ]
 ```
