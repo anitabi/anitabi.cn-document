@@ -31,12 +31,14 @@ sidebar_position: 1
 
 
 在上方输入框可以输入地标名，下方可以输入简介
+
 ![](./img/import-from-google/add-popup.webp)
 
-> 如果已经有坐标，可以粘贴到输入框并回车，就会弹出该坐标，点击添加至地图即可
+> 如果已经有坐标，可以粘贴到输入框并回车，在地图上就会弹出该坐标的对话框，点击添加至地图即可
 
 ### 使用场景 2：已经有 kml 文件
 点击省略号，在菜单中点击导入，选择文件即可
+
 ![](./img/import-from-google/import-from-kml.webp)
 
 ### 使用场景 3：在 google map 上有已保存列表
