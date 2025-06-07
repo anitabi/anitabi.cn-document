@@ -31,10 +31,10 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        cache: 'yarn'
     - name: Checkout current repo
       uses: actions/checkout@v4
       with:
         path: docs
-    - run: npm ci
-    - run: npm run build --if-present
+    - run: yarn install --frozen-lockfile
+    - run: yarn run --if-present build
