@@ -30,7 +30,7 @@
 
 | ![landmark_details](./img/tutorial-editor/landmark_details_head.png)           | ![landmark_details](./img/tutorial-editor/landmark_details_desc.png)  |![landmark_details](./img/tutorial-editor/landmark_details_rally_n_source.png) | ![landmark_details](./img/tutorial-editor/landmark_details_group.png) |
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| （地标截图、中/日文名、对应EP和时间戳、分组                                                        | （地标的描述信息）                       |（地标的集合和来源                                                                      | （地标批量分组）                                                              |
+| 地标截图、中/日文名、对应EP和时间戳、分组                                                        | 地标的描述信息                       |地标的集合和来源                                                                      | 地标批量分组                                                              |
 
 一个地标必要的三要素是对应动画截图、日文地标名与分组名。
 
