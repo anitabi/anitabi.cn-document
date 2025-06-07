@@ -39,6 +39,6 @@ jobs:
     - run: yarn install --frozen-lockfile
     - run: yarn run --if-present build
   call-update-submodule:
-    if: ${{ github.event_name == 'push' }}
+    if: ${{ github.event_name == 'push' && always() && needs.build.result == 'success' }}
     uses: ./.github/workflows/submodule-update.yml
     needs: [build]
