@@ -6,8 +6,8 @@ name: Docusaurus Build Test
 on: 
   workflow_dispatch:
   pull_request:
-  # push:
-  #   branches: [ "master" ]
+  push:
+    branches: [ "master" ]
   # pull_request:
   #   branches: [ "*" ]
   
@@ -38,3 +38,7 @@ jobs:
         path: docs
     - run: yarn install --frozen-lockfile
     - run: yarn run --if-present build
+    call-update-submodule:
+      if: ${{ github.event_name == 'push' }}
+      uses: ./.github/workflows/submodule-update.yml
+      needs: [build]

@@ -2,11 +2,8 @@
 name: Submodule Updates
 
 on:
-  workflow_run:
-      workflows: [CI]
-      branches: [master]
-      types:
-        - completed
+  workflow_dispatch:
+  workflow_call:
 
 jobs:
   build:
