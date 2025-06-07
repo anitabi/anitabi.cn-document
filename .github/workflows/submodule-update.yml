@@ -14,6 +14,6 @@ jobs:
         id: run_action
         uses: PaulRitter/github-action-create-commit-parent-submodule@v2.0
         with:
-          github_token: ${{ secrets.GH_ACTIONS_TOKEN }}
+          github_token: ${{ github.token }}
           parent_repository: anitabi/navi.anitabi.cn
           parent_branch: master
