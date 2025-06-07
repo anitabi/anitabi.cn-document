@@ -25,7 +25,8 @@ jobs:
     steps:
     - name: Checkout out parent repo
       uses: actions/checkout@v4
-      with: "anitabi/navi.anitabi.cn"
+      with: 
+        repository: "anitabi/navi.anitabi.cn"
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
