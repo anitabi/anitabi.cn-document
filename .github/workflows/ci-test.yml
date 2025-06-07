@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   pull_request:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "ci-test" ]
   # pull_request:
   #   branches: [ "*" ]
   
@@ -39,6 +39,7 @@ jobs:
     - run: yarn install --frozen-lockfile
     - run: yarn run --if-present build
   call-update-submodule:
-    if: ${{ github.event_name == 'push' && always() && needs.build.result == 'success' }}
+    if: ${{ github.event_name == 'push' }}
     uses: ./.github/workflows/submodule-update.yml
     needs: [build]
+    secrets: inherit

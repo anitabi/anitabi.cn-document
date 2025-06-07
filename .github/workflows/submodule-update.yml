@@ -4,10 +4,12 @@ name: Submodule Updates
 on:
   workflow_dispatch:
   workflow_call:
+    secrets:
+      GH_ACTIONS_TOKEN:
+        required: true
 
 jobs:
   build:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     name: Submodule update
     runs-on: ubuntu-latest
     steps:
