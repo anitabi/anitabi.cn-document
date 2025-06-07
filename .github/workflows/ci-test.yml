@@ -19,15 +19,21 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
+        node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout out parent repo
+      uses: actions/checkout@v4
+      with: "anitabi/navi.anitabi.cn"
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Checkout current repo
+      uses: actions/checkout@v4
+      with:
+        path: docs
     - run: npm ci
     - run: npm run build --if-present
