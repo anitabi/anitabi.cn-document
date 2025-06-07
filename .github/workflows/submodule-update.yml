@@ -4,6 +4,9 @@ name: Submodule Updates
 on:
   workflow_dispatch:
   workflow_call:
+    secrets:
+      GH_ACTIONS_TOKEN:
+        required: true
 
 jobs:
   build:
@@ -14,6 +17,6 @@ jobs:
         id: run_action
         uses: PaulRitter/github-action-create-commit-parent-submodule@v2.0
         with:
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GH_ACTIONS_TOKEN }}
           parent_repository: anitabi/navi.anitabi.cn
           parent_branch: master

@@ -42,3 +42,4 @@ jobs:
     if: ${{ github.event_name == 'push' }}
     uses: ./.github/workflows/submodule-update.yml
     needs: [build]
+    secrets: inherit
