@@ -2,10 +2,15 @@
 name: Submodule Updates
 
 on:
-  push
+  workflow_run:
+      workflows: [CI]
+      branches: [master]
+      types:
+        - completed
 
 jobs:
   build:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     name: Submodule update
     runs-on: ubuntu-latest
     steps:
