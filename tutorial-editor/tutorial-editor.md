@@ -6,7 +6,7 @@
 
 ### 新增地标
 
-<img src="./img/landmark_empty.png" style="width:450px; height:auto;">
+<img src="./img/landmark_empty.png" style="width:450px; height:auto;" />
 （管理员可以在地图上任何一个没有地标的空位上创建空地标）
 
 首先在地图上找到希望新增标点的位置，然后单击该位置，即可在该位置上生成一个默认地标。
@@ -14,7 +14,7 @@
 地标如果位于已标记地理信息的位置上，则自动以该地理位置命名（在这个例子中，如果你在横尾山的位置新建地标，就会自动命名为横尾山）。
 否则，将按照地标顺序命名（例如，第208个地标会命名为208）。
 
-<img src="./img/landmark_new.png" style="width:450px; height:auto;">
+<img src="./img/landmark_new.png" style="width:450px; height:auto;" />
 （成功创建地标）
 
 在某些缩放等级下不允许新建地标，这种情况下需要放大地图的缩放比例。
@@ -25,7 +25,7 @@
 
 ### 编辑地标信息
 
-<img src="./img/landmark_details.png" style="width:400px; height:auto;">
+<img src="./img/landmark_details.png" style="width:400px; height:auto;" />
 （地标各可编辑元素的说明）
 
 一个地标必要的三要素是对应动画截图、日文地标名与分组名。
@@ -37,8 +37,8 @@
 5. 编辑器界面画面使用16:9展示，有灰边说明比例不是16:9。前台画面会通过16:9裁剪中间区域进行展示。  
 6. 画面上传支持浏览器支持的全部图片格式，所有画面上传之前会按照JPEG 90%质量进行压缩。
 
-<img src="./img/landmark_with_no_screenshot.png" style="width:400px; height:auto;">
-<img src="./img/landmark_with_no_screenshot_2.png" style="width:400px; height:auto;">
+<img src="./img/landmark_with_no_screenshot.png" style="width:400px; height:auto;" />
+<img src="./img/landmark_with_no_screenshot_2.png" style="width:400px; height:auto;" />
 （示例：无截图地标与有截图地标）
 
 其它非必填元素包括：中文地标名、对应EP及秒数、地标描述信息、标点集合。
@@ -52,11 +52,11 @@
 
 如果遇到个别分组不生效的情况，请检查该地标是否属于某个集合中。 被加入到集合的地标会以深色形式出现在标点列表中。以下方的情况为例：
 
-<img src="./img/landmark_rally_case_1.png" style="width:400px; height:auto;">
+<img src="./img/landmark_rally_case_1.png" style="width:400px; height:auto;" />
 
 在这个例子中，富丘八幡神社的最后一个地标被设为了集合地标。该地标及其他被设置为该集合的地标都会单独归属于一个以集合地标命名的分组，而不是它被设置的分组“土庄町东-富丘八幡神社”。
 
-<img src="./img/landmark_rally_case_2.png" style="width:400px; height:auto;">
+<img src="./img/landmark_rally_case_2.png" style="width:400px; height:auto;" />
 
 紧接着，重岩的第一个地标被设置到前一个地标的集合“富丘八幡神社”中。因此，它不会被分组到所分组名元素中设置的“土庄町西-重岩不动”。
 
@@ -64,13 +64,13 @@
 
 在地标列表中，地标会根据集合状态显示不同的颜色，具体的状态-颜色关系参考下图示例：
 
-<img src="./img/landmark_rally_status_colour.png" style="width:400px; height:auto;">
+<img src="./img/landmark_rally_status_colour.png" style="width:400px; height:auto;" />
 
 **【重要Tips】** 遇到个别地标所设置的分组名不生效的情况，请优先检查该地标是否属于某个集合，确认无误后再上报问题。
 
 ### 分组排序规则
 
-<img src="./img/landmark_group_sort.png" style="width:400px; height:auto;">
+<img src="./img/landmark_group_sort.png" style="width:400px; height:auto;" />
 （示例：对地标手动排序后，编辑器界面的分组展示）
 
 用户在前端看见的分组排序，由该分组名在编辑器中出现的顺序决定。例如，对于上方示例图中的地标排序：
@@ -83,7 +83,7 @@
 
 最终呈现在用户面前的分组排序如图所示。
 
-<img src="./img/landmark_group_sort_to_user.png" style="width:400px; height:auto;">
+<img src="./img/landmark_group_sort_to_user.png" style="width:400px; height:auto;" />
 （示例：用户界面的分组展示排序）
 
 目前编辑器只支持对单个地标进行拖拽排序，因此，如果需要对用户界面的分组进行排序，可以考虑以下两种方法：
@@ -102,7 +102,7 @@
 5. 对于新增分组名，尽量沿用原有的命名风格。为了改善用户实地使用时的易用性，可以考虑以【区域名】-【最近的公交站点】-【行政区划】的方式命名。
 6. 进行大修时，尽量在编辑器底部的输入栏中记录本次大修的内容与日期。
 
-<img src="./img/edit_logs.png" style="width:290px; height:auto;">
+<img src="./img/edit_logs.png" style="width:290px; height:auto;" />
 (示例：大修备注)
 
 ### 保存地标信息
