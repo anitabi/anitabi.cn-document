@@ -23,11 +23,9 @@ anitabi map 动画巡礼地图 是一个共享动画取景圣地地标与截图�
 ## 开放 API
 [开放 API 文档地址](api.md)
 
+
 ## 更新记录
 [更新记录](CHANGELOG.md)
 
-
-## CDN
-本项目 CDN 加速及安全防护由 [<img width="140" height="20" alt="Tencent EdgeOne" src="https://github.com/user-attachments/assets/c96a0e8e-bf25-47e7-ad78-36a67525aded" />](https://edgeone.ai/zh?from=github) 赞助
-
-
+## 声明
+ - 本项目 CDN 加速及安全防护由 [<img width="140" height="20" style="vertical-align: middle;" alt="Tencent EdgeOne" src="https://github.com/user-attachments/assets/c96a0e8e-bf25-47e7-ad78-36a67525aded" />](https://edgeone.ai/zh?from=github) 赞助
