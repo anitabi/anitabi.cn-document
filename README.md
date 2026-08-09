@@ -1,8 +1,8 @@
 # 动画巡礼文档
 
 [![Discord](https://img.shields.io/badge/anitabi%20discord-anitabi?style=for-the-badge&logo=discord&color=7289da)](https://discord.gg/8dJ9Vt6xVp)
-[![Bilibili](https://img.shields.io/badge/ANITABI%20BILIBILI-ANITABI?logo=bilibili&logoColor=blue&color=89CFF0)](https://space.bilibili.com/3546874137021353)
-[![Redbook](https://img.shields.io/badge/ANITABI%20BILIBILI-ANITABI?logo=xiaohongshu&logoColor=red&color=ffd8d9)](https://xhslink.cn/m/9YZw5q0EvDx)
+[![Bilibili](https://img.shields.io/badge/ANITABI%20BILIBILI-ANITABI?style=for-the-badge&logo=bilibili&color=ADD8E6)](https://space.bilibili.com/3546874137021353)
+[![Redbook](https://img.shields.io/badge/ANITABI%20%E5%B0%8F%E7%BA%A2%E4%B9%A6-ANITABI?style=for-the-badge&logo=xiaohongshu&logoColor=red&color=ffd8d9)](https://xhslink.cn/m/9YZw5q0EvDx)
 
 ## 动画巡礼地图
 
