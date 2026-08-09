@@ -1,5 +1,7 @@
 # 动画巡礼文档
 
+[![Discord](https://img.shields.io/badge/anitabi%20discord-anitabi?style=for-the-badge&logo=discord&color=7289da)](https://discord.gg/8dJ9Vt6xVp)
+
 ## 动画巡礼地图
 
 地址： https://anitabi.cn/map
